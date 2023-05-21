@@ -1,0 +1,452 @@
+4 8
+Grand_Slam
+Masters_1000
+ATP_500
+ATP_250
+2000 1200 720 360 180 90 45 10
+1000  600 360 180  90 45 25 10
+ 500  300 180  90  45 20  0  0
+ 250  150  90  45  20  0  0  0
+5
+Wimbledon 1
+Indian_Wells 2
+Barcelona 3
+Estoril 4
+Cincinnati 2
+50
+Djokovic
+Medvedev
+Zverev
+Tsitsipas
+Nadal
+Berrettini
+Rublev
+Ruud
+Auger-Aliassime
+Sinner
+Hurkacz
+Norrie
+Schwartzman
+Shapovalov
+Bautista
+Fritz
+Carreno
+Opelka
+Basilashvili
+Alcaraz
+Sonego
+Karatsev
+Isner
+Cilic
+Monfils
+Khachanov
+Garin
+Evans
+Federer
+Bublik
+Ramos
+De-Minaur
+Dimitrov
+Tiafoe
+Harris
+Fucsovics
+Delbonis
+Fognini
+Paul
+Korda
+Humbert
+Nishikori
+Davidovich
+Krajinovic
+Ivashka
+Lajovic
+Brooksby
+Goffin
+Paire
+Thiem
+listar_categorias
+iniciar_torneo Barcelona
+14
+ 4 5 6 13 15 17 20 24 25 26 27 31 33 37 
+nuevo_jugador Duckworth
+nj Bublik
+consultar_jugador Nadal
+cj Popyrin
+it Cincinnati
+32
+ 1 2 3 7 8 9 10 11 12 14 16 18 19 21 22 23
+ 28 29 30 32 34 35 36 38 40 42 44 45 46 47 48 49
+finalizar_torneo Barcelona
+7-6,3-6,6-4
+6-2,6-4
+6-4,6-4
+0
+6-4,4-6,4-6
+0 0
+1-6,6-2,3-6
+6-1,6-3
+0 0
+7-5,7-6
+0 0
+7-6,4-6,6-7
+5-7,5-7
+0
+6-3,6-7,7-5
+0 0
+5-7,6-3,6-0
+6-4,7-6
+0 0
+1-0
+0 0
+cj Nadal
+ft Cincinnati
+4-6,6-3,4-6
+6-3,7-6
+6-2,6-4
+6-3,6-1
+6-0,6-1
+0 0
+5-7,3-6
+0 0
+6-3,6-7,6-7
+6-4,6-4
+0 0
+6-7,6-2,6-2
+0 0
+3-6,6-4,7-5
+7-5,7-5
+6-1,6-2
+0 0
+5-7,3-6
+0 0
+7-5,3-6,6-3
+4-6,5-7
+0 0
+5-7,3-6
+0 0
+7-6,7-6
+6-3,3-6,6-3
+1-0
+6-2,6-4
+0 0
+0-1
+0 0
+6-7,6-4,5-7
+6-1,6-1
+0 0
+5-7,3-6
+0 0
+5-7,6-3,6-0
+6-4,7-6
+6-0,6-1
+0 0
+6-4,5-7,3-6
+0 0
+6-3,6-4
+0-1
+0 0
+6-4,6-1
+0 0
+cj Djokovic
+nj Popyrin
+nuevo_torneo Casablanca 5
+nt Casablanca 4
+nt Estoril 4
+baja_jugador Thiem
+bj Bonzi
+baja_torneo Kiev
+bt Estoril
+listar_torneos
+listar_ranking
+listar_jugadores
+nuevo_jugador Djere
+nj Kwon
+nj Coria
+nj Andujar
+nj Gaston
+nj Gasquet
+nj Murray
+nj Nishioka
+nj Cuevas
+nj Lopez
+nj Querrey
+nj Vesely
+nj Kohlschreiber
+nj Kyrgios
+nj Chardy
+nj Verdasco
+nj Pospisil
+nj Raonic
+nj Wawrinka
+iniciar_torneo Casablanca
+13
+ 15 28 30 40 45 46 48 49 54 55 57 61 67
+it Indian_Wells
+28
+ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 16 17 18 19 22 25 29 31 33 34 36 42 58 60
+finalizar_torneo Casablanca
+6-3,7-6
+4-6,6-3,6-2
+6-1,6-4
+0
+6-4,4-6,6-4
+0 0
+6-1,5-7,6-3
+4-6,4-6
+0 0
+7-5,6-7,0-6
+0 0
+6-3,6-2
+7-5,5-7,7-6
+0
+6-3,4-6,4-6
+0 0
+6-1,6-1
+0
+4-6,3-6
+0 0 
+ft Indian_Wells
+3-6,6-4,7-6
+7-5,3-6,3-6
+6-4,6-4
+6-1,6-0
+0
+5-7,6-4,6-1
+0 0
+6-3,6-3
+1-6,6-4,2-6
+0 0
+6-7,4-6
+0 0
+6-2,6-3
+3-6,6-2,5-7
+0
+6-1,6-1
+0 0
+7-5,6-3
+4-6,6-7
+0 0
+1-0
+0 0
+6-2,7-5
+6-3,6-3
+6-4,6-1
+0
+6-3,4-6,6-4
+0 0
+7-6,7-6
+6-0,6-2
+0 0
+3-6,2-6
+0 0
+4-6,7-5,6-3
+6-4,6-4
+0
+6-2,7-6
+0 0
+0-1
+6-1,6-4
+0 0
+5-7,3-6
+0 0
+lr
+baja_jugador Verdasco
+it Wimbledon
+65
+ 1 2 3 4 5 6 7 8 9 10 11 12 13 14 15 16 17 18 19 20 21 22 23 24 25 26 27 28 29 30 
+ 32 33 34 35 36 38 40 41 42 43 44 45 46 47 49 50 51 52 53 54
+ 55 56 57 58 59 60 61 62 63 64 65 66 67 68 69
+ft Wimbledon
+4-6,6-3,4-6
+6-3,7-6
+6-2,6-4
+6-3,6-1
+6-0,6-1
+1-0
+0 
+3-6,4-6
+0 0
+0-1
+0 0
+5-7,3-6
+1-0
+0 0
+0-1
+0 0
+6-3,6-7,6-7
+6-4,6-4
+1-0
+0 0
+0-1
+0 0
+6-7,6-2,6-2
+1-0
+0 0
+0-1
+0 0
+3-6,6-4,7-5
+7-5,7-5
+6-1,6-2
+1-0
+0 0
+0-1
+0 0
+5-7,3-6
+1-0
+0 0
+0-1
+0 0
+7-5,3-6,6-3
+4-6,5-7
+1-0
+0 0
+0-1
+0 0
+5-7,3-6
+1-0
+0 0
+0-1
+0 0
+7-6,7-6
+6-3,3-6,6-3
+1-0
+6-2,6-4
+1-0
+0 0
+0-1
+0 0
+0-1
+1-0
+0 0
+0-1
+0 0
+6-7,6-4,5-7
+6-1,6-1
+1-0
+0 0
+0-1
+0 0
+5-7,3-6
+1-0
+0 0
+0-1
+0 0
+5-7,6-3,6-0
+6-4,7-6
+6-0,6-1
+1-0
+0 0
+0-1
+0 0
+6-4,5-7,3-6
+1-0
+0 0
+0-1
+0 0
+6-3,6-4
+0-1
+1-0
+0 0
+0-1
+0 0
+6-4,6-1
+1-0
+0 0
+0-1
+0 0
+listar_ranking
+listar_jugadores
+baja_jugador Fritz
+bj Khachanov
+it Barcelona
+21
+ 4 5 6 7 8 10 13 16 19 20 21 22 26 27 28 29 35 36 41 52 62 
+bt Cincinnati
+ft Barcelona
+7-5,6-7,7-6
+2-6,3-6
+7-6,3-6,6-4
+6-7,6-2,6-7
+0
+7-5,6-4
+0 0
+6-3,6-0
+0 0
+6-1,6-4
+6-1,6-1
+0
+1-0
+0 0
+4-6,6-3,6-7
+0
+6-7,3-6
+0 0
+6-4,1-6,2-6
+1-0
+6-7,6-4,3-6
+0
+4-6,6-7
+0 0
+6-3,6-3
+0 0
+0-6,2-6
+0-1
+0
+7-5,7-5
+0 0 
+6-4,7-5
+0 0
+nuevo_jugador Fritz
+lr
+it Indian_Wells
+28
+ 1 2 3 11 12 17 21 24 25 29 30 31 32 33 34 37 38 39 40 41 42 49 50 53 60 62 66 68
+ft Indian_Wells 
+7-6,3-6,6-4
+6-2,6-4
+6-4,6-4
+6-3,6-0
+0
+6-4,4-6,7-6
+0 0
+6-4,4-6,4-6
+6-2,6-3
+0 0
+1-0
+0 0
+1-6,6-2,3-6
+6-1,6-3
+0
+7-5,6-0
+0 0
+7-5,7-6
+6-1,6-1
+0 0
+6-3,6-3
+0 0
+7-6,4-6,6-7
+7-5,7-5
+6-1,6-2
+0
+6-2,5-7,4-6
+0 0
+6-3,6-7,7-5
+6-1,6-4
+0 0
+7-6,6-3
+0 0
+5-7,6-3,6-0
+6-4,7-6
+0
+3-6,7-5,5-7
+0 0
+1-0
+7-6,6-4
+0 0
+0-1
+0 0
+lt
+lr
+lj
+fin
+
