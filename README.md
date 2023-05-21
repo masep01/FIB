@@ -5,11 +5,15 @@ Práctica Primavera 2022 (Q2) PRO2
 
 Documentación completa de la práctica:
 
-El programa principal se encuentra en el módulo main.cc . La práctica cuenta con cinco módulos:
+El programa principal se encuentra en el módulo main.cc. La práctica cuenta con cinco módulos:
     - Circuito.hh
+    
     - Torneo.hh
+    
     - Cjt_jugadores.hh
+    
     - Jugador.hh
+    
     - Cjt_categorias.hh
 
 El objetivo de la práctica es llevar a cabo la construcción un programa capaz de gestionar un circuito de Torneos de Tenis.
