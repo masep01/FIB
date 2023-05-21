@@ -5,7 +5,7 @@ Práctica Primavera 2022 (Q2) PRO2
 
 Documentación completa de la práctica:
 
-El programa principal se encuentra en el módulo \em main.cc . La práctica cuenta con cinco módulos:
+El programa principal se encuentra en el módulo main.cc . La práctica cuenta con cinco módulos:
     - Circuito.hh
     - Torneo.hh
     - Cjt_jugadores.hh
