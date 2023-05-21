@@ -1,8 +1,0 @@
-<map id="Circuito.cc" name="Circuito.cc">
-<area shape="rect" id="node1" title="Código de la clase Circuito." alt="" coords="99,5,181,32"/>
-<area shape="rect" id="node2" href="$_circuito_8hh.html" title="Especificación de la clase Circuito." alt="" coords="99,80,181,107"/>
-<area shape="rect" id="node3" href="$_torneo_8hh.html" title="Especificación de la clase Torneo." alt="" coords="101,155,179,181"/>
-<area shape="rect" id="node4" href="$_cjt__categorias_8hh.html" title="Especificación de la clase Cjt_categorias." alt="" coords="5,229,128,256"/>
-<area shape="rect" id="node5" href="$_cjt__jugadores_8hh.html" title="Especificación de la clase Cjt_jugadores." alt="" coords="155,229,274,256"/>
-<area shape="rect" id="node6" href="$_jugador_8hh.html" title="Especificación de la clase Jugador." alt="" coords="172,304,257,331"/>
-</map>
