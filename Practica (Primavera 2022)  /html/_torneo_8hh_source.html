@@ -1,0 +1,182 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.8.17"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>Práctica PRO2 Primavera 2022: Circuito de Torneos de Tenis: Fichero Fuente Torneo.hh</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">Práctica PRO2 Primavera 2022: Circuito de Torneos de Tenis
+   &#160;<span id="projectnumber">17-05-2022</span>
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Generado por Doxygen 1.8.17 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Buscar');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Buscar');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+</div><!-- top -->
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+<div class="header">
+  <div class="headertitle">
+<div class="title">Torneo.hh</div>  </div>
+</div><!--header-->
+<div class="contents">
+<a href="_torneo_8hh.html">Ir a la documentación de este archivo.</a><div class="fragment"><div class="line"><a name="l00001"></a><span class="lineno">    1</span>&#160; </div>
+<div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#ifndef TORNEO_HH</span></div>
+<div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#define TORNEO_HH</span></div>
+<div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_cjt__categorias_8hh.html">Cjt_categorias.hh</a>&quot;</span></div>
+<div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="_cjt__jugadores_8hh.html">Cjt_jugadores.hh</a>&quot;</span></div>
+<div class="line"><a name="l00010"></a><span class="lineno">   10</span>&#160;<span class="preprocessor">#ifndef NO_DIAGRAM</span></div>
+<div class="line"><a name="l00011"></a><span class="lineno">   11</span>&#160;<span class="preprocessor">#include &quot;BinTree.hh&quot;</span></div>
+<div class="line"><a name="l00012"></a><span class="lineno">   12</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
+<div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="preprocessor">#include &lt;map&gt;</span></div>
+<div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;cmath&gt;</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="keyword">using namespace </span>std;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00025"></a><span class="lineno"><a class="line" href="_torneo_8hh.html#aa6f49b2a0b2930b16066ae325fbdca47">   25</a></span>&#160;<span class="keyword">typedef</span> map&lt;string, int&gt;::iterator <a class="code" href="_torneo_8hh.html#aa6f49b2a0b2930b16066ae325fbdca47">It_puntos</a>;</div>
+<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="_torneo_8hh.html#a0e64edcc3151c11684e0e39037ecea2e">   28</a></span>&#160;<span class="keyword">typedef</span> map&lt;string, int&gt;::const_iterator <a class="code" href="_torneo_8hh.html#a0e64edcc3151c11684e0e39037ecea2e">It_const_puntos</a>;</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno"><a class="line" href="class_torneo.html">   30</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_torneo.html">Torneo</a> {</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <span class="keyword">private</span>:</div>
+<div class="line"><a name="l00034"></a><span class="lineno"><a class="line" href="class_torneo.html#ad9bec7ef311a416138abb99f3a487b3e">   34</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_torneo.html#ad9bec7ef311a416138abb99f3a487b3e">categoria</a>;</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno"><a class="line" href="class_torneo.html#ad7234d0b68dd3b8494b1a8b3482dfd8a">   37</a></span>&#160;        <span class="keywordtype">int</span> <a class="code" href="class_torneo.html#ad7234d0b68dd3b8494b1a8b3482dfd8a">n_inscritos</a>;</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00040"></a><span class="lineno"><a class="line" href="class_torneo.html#a999ed633620e3b7232ded14b02d63aca">   40</a></span>&#160;        <span class="keywordtype">bool</span> <a class="code" href="class_torneo.html#a999ed633620e3b7232ded14b02d63aca">first_time</a>;</div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160; </div>
+<div class="line"><a name="l00043"></a><span class="lineno"><a class="line" href="struct_torneo_1_1_stats.html">   43</a></span>&#160;        <span class="keyword">struct </span><a class="code" href="struct_torneo_1_1_stats.html">Stats</a></div>
+<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;        {</div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="struct_torneo_1_1_stats.html#a44f78ff4738de24ab808f6d7cfa8ebed">   45</a></span>&#160;            <span class="keywordtype">int</span> <a class="code" href="struct_torneo_1_1_stats.html#a44f78ff4738de24ab808f6d7cfa8ebed">puntos</a>;</div>
+<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="struct_torneo_1_1_stats.html#add75293c4212dbfad392123c451995ae">   46</a></span>&#160;            <span class="keywordtype">int</span> sets_ganados, <a class="code" href="struct_torneo_1_1_stats.html#add75293c4212dbfad392123c451995ae">sets_perdidos</a>;</div>
+<div class="line"><a name="l00047"></a><span class="lineno"><a class="line" href="struct_torneo_1_1_stats.html#a2b87092b44f0b664219570335cc35385">   47</a></span>&#160;            <span class="keywordtype">int</span> juegos_ganados, <a class="code" href="struct_torneo_1_1_stats.html#a2b87092b44f0b664219570335cc35385">juegos_perdidos</a>;</div>
+<div class="line"><a name="l00048"></a><span class="lineno"><a class="line" href="struct_torneo_1_1_stats.html#a9672866e67ea73da9066dd34623af3d7">   48</a></span>&#160;            <span class="keywordtype">int</span> p_ganados, <a class="code" href="struct_torneo_1_1_stats.html#a9672866e67ea73da9066dd34623af3d7">p_perdidos</a>;</div>
+<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;        };</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
+<div class="line"><a name="l00052"></a><span class="lineno"><a class="line" href="class_torneo.html#ae4640e2a7a1bcd503d636f9f0ee926e0">   52</a></span>&#160;        map&lt;string, int&gt; <a class="code" href="class_torneo.html#ae4640e2a7a1bcd503d636f9f0ee926e0">pts_edicion_ant</a>;</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno"><a class="line" href="class_torneo.html#ab9e28935a3a78d35b566c4d8b0d68337">   55</a></span>&#160;        vector&lt;string&gt; <a class="code" href="class_torneo.html#ab9e28935a3a78d35b566c4d8b0d68337">inscritos</a>;</div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno"><a class="line" href="class_torneo.html#a3a5d4527faf599edcc3e0fd6869dd2a1">   58</a></span>&#160;        BinTree&lt;int&gt; <a class="code" href="class_torneo.html#a3a5d4527faf599edcc3e0fd6869dd2a1">cuadro</a>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;        <span class="keywordtype">void</span> leer_inscritos (<span class="keyword">const</span> <a class="code" href="class_cjt__jugadores.html">Cjt_jugadores</a> &amp;r_global);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;        BinTree&lt;int&gt; generar_cuadro_emparejamiento(<span class="keywordtype">int</span> r, <span class="keywordtype">int</span> l);</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;        <span class="keywordtype">void</span> imprimir_cuadro_emparejamiento(<span class="keyword">const</span> BinTree&lt;int&gt; &amp;a) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;        BinTree&lt;string&gt; leer_resultados(<span class="keywordtype">int</span> deep, <span class="keywordtype">int</span> h);</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00088"></a><span class="lineno">   88</span>&#160;        <span class="keywordtype">void</span> desarrollar_torneo(<span class="keyword">const</span> BinTree&lt;string&gt;&amp; a, BinTree&lt;int&gt; &amp;cuadro, <span class="keyword">const</span> <a class="code" href="class_cjt__categorias.html">Cjt_categorias</a> &amp;categ, vector&lt;Stats&gt;&amp; stats, <span class="keywordtype">int</span> lvl);</div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;        <span class="keywordtype">void</span> imprimir_cuadro_resultados(<span class="keyword">const</span> BinTree&lt;string&gt;&amp; a, <span class="keyword">const</span> BinTree&lt;int&gt; &amp;b, <span class="keyword">const</span> <a class="code" href="class_cjt__jugadores.html">Cjt_jugadores</a> &amp;r) <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160;        <span class="keywordtype">void</span> procesar_ranking_relativo(<a class="code" href="class_cjt__jugadores.html">Cjt_jugadores</a> &amp;r_global, vector&lt;Stats&gt;&amp; stats);</div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160; </div>
+<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160;        <span class="keywordtype">int</span> procesar_partido(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;match, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;a, <span class="keyword">const</span> <span class="keywordtype">int</span> &amp;b, vector&lt;Stats&gt;&amp; stats);</div>
+<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keyword">public</span>:</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;        <span class="comment">// Constructoras</span></div>
+<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;<span class="comment"></span>        <a class="code" href="class_torneo.html">Torneo</a>();</div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;        <a class="code" href="class_torneo.html">Torneo</a>(<span class="keywordtype">int</span> c);</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;        <span class="comment">// Destructora</span></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160; </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;        ~<a class="code" href="class_torneo.html">Torneo</a>();</div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160; </div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;        <span class="comment">// Modificadoras</span></div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;        <span class="keywordtype">void</span> iniciar_torneo(<span class="keyword">const</span> <a class="code" href="class_cjt__jugadores.html">Cjt_jugadores</a>&amp; r_global);</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;        <span class="keywordtype">void</span> finalizar_torneo(<a class="code" href="class_cjt__jugadores.html">Cjt_jugadores</a>&amp; r_global, <span class="keyword">const</span> <a class="code" href="class_cjt__categorias.html">Cjt_categorias</a>&amp; categ);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160;        <span class="keywordtype">void</span> restar_puntos_ultima_edicion(<a class="code" href="class_cjt__jugadores.html">Cjt_jugadores</a> &amp;r);</div>
+<div class="line"><a name="l00155"></a><span class="lineno">  155</span>&#160; </div>
+<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;        <span class="keywordtype">void</span> baja_jugador(<span class="keyword">const</span> <span class="keywordtype">string</span> &amp;nombre);</div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;        <span class="comment">// Consultoras</span></div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160; </div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;        <span class="keywordtype">int</span> consultar_categoria() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
+<div class="line"><a name="l00174"></a><span class="lineno">  174</span>&#160;        <span class="keywordtype">bool</span> torneo_jugado() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;};</div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160; </div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="preprocessor">#endif</span></div>
+</div><!-- fragment --></div><!-- contents -->
+<div class="ttc" id="a_torneo_8hh_html_aa6f49b2a0b2930b16066ae325fbdca47"><div class="ttname"><a href="_torneo_8hh.html#aa6f49b2a0b2930b16066ae325fbdca47">It_puntos</a></div><div class="ttdeci">map&lt; string, int &gt;::iterator It_puntos</div><div class="ttdoc">Iterador de un diccionario de &lt;string, int&gt;</div><div class="ttdef"><b>Definition:</b> <a href="_torneo_8hh_source.html#l00025">Torneo.hh:25</a></div></div>
+<div class="ttc" id="aclass_cjt__jugadores_html"><div class="ttname"><a href="class_cjt__jugadores.html">Cjt_jugadores</a></div><div class="ttdoc">Representa un conjunto de jugadores.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt__jugadores_8hh_source.html#l00028">Cjt_jugadores.hh:28</a></div></div>
+<div class="ttc" id="a_cjt__jugadores_8hh_html"><div class="ttname"><a href="_cjt__jugadores_8hh.html">Cjt_jugadores.hh</a></div><div class="ttdoc">Especificación de la clase Cjt_jugadores.</div></div>
+<div class="ttc" id="astruct_torneo_1_1_stats_html"><div class="ttname"><a href="struct_torneo_1_1_stats.html">Torneo::Stats</a></div><div class="ttdoc">Tupla auxiliar para transimitir estadísticas.</div><div class="ttdef"><b>Definition:</b> <a href="_torneo_8hh_source.html#l00043">Torneo.hh:43</a></div></div>
+<div class="ttc" id="aclass_torneo_html_ad9bec7ef311a416138abb99f3a487b3e"><div class="ttname"><a href="class_torneo.html#ad9bec7ef311a416138abb99f3a487b3e">Torneo::categoria</a></div><div class="ttdeci">int categoria</div><div class="ttdoc">Categoría del torneo.</div><div class="ttdef"><b>Definition:</b> <a href="_torneo_8hh_source.html#l00034">Torneo.hh:34</a></div></div>
+<div class="ttc" id="aclass_torneo_html_a999ed633620e3b7232ded14b02d63aca"><div class="ttname"><a href="class_torneo.html#a999ed633620e3b7232ded14b02d63aca">Torneo::first_time</a></div><div class="ttdeci">bool first_time</div><div class="ttdoc">Indica si ha habido alguna edición del torneo.</div><div class="ttdef"><b>Definition:</b> <a href="_torneo_8hh_source.html#l00040">Torneo.hh:40</a></div></div>
+<div class="ttc" id="a_torneo_8hh_html_a0e64edcc3151c11684e0e39037ecea2e"><div class="ttname"><a href="_torneo_8hh.html#a0e64edcc3151c11684e0e39037ecea2e">It_const_puntos</a></div><div class="ttdeci">map&lt; string, int &gt;::const_iterator It_const_puntos</div><div class="ttdoc">Iterador constante de un diccionario de &lt;string, int&gt;</div><div class="ttdef"><b>Definition:</b> <a href="_torneo_8hh_source.html#l00028">Torneo.hh:28</a></div></div>
+<div class="ttc" id="aclass_torneo_html_ab9e28935a3a78d35b566c4d8b0d68337"><div class="ttname"><a href="class_torneo.html#ab9e28935a3a78d35b566c4d8b0d68337">Torneo::inscritos</a></div><div class="ttdeci">vector&lt; string &gt; inscritos</div><div class="ttdoc">Nombres de los inscritos.</div><div class="ttdef"><b>Definition:</b> <a href="_torneo_8hh_source.html#l00055">Torneo.hh:55</a></div></div>
+<div class="ttc" id="aclass_torneo_html_a3a5d4527faf599edcc3e0fd6869dd2a1"><div class="ttname"><a href="class_torneo.html#a3a5d4527faf599edcc3e0fd6869dd2a1">Torneo::cuadro</a></div><div class="ttdeci">BinTree&lt; int &gt; cuadro</div><div class="ttdoc">Cuadro de emparejamientos.</div><div class="ttdef"><b>Definition:</b> <a href="_torneo_8hh_source.html#l00058">Torneo.hh:58</a></div></div>
+<div class="ttc" id="aclass_torneo_html"><div class="ttname"><a href="class_torneo.html">Torneo</a></div><div class="ttdoc">Representa un torneo.</div><div class="ttdef"><b>Definition:</b> <a href="_torneo_8hh_source.html#l00030">Torneo.hh:30</a></div></div>
+<div class="ttc" id="astruct_torneo_1_1_stats_html_add75293c4212dbfad392123c451995ae"><div class="ttname"><a href="struct_torneo_1_1_stats.html#add75293c4212dbfad392123c451995ae">Torneo::Stats::sets_perdidos</a></div><div class="ttdeci">int sets_perdidos</div><div class="ttdef"><b>Definition:</b> <a href="_torneo_8hh_source.html#l00046">Torneo.hh:46</a></div></div>
+<div class="ttc" id="astruct_torneo_1_1_stats_html_a44f78ff4738de24ab808f6d7cfa8ebed"><div class="ttname"><a href="struct_torneo_1_1_stats.html#a44f78ff4738de24ab808f6d7cfa8ebed">Torneo::Stats::puntos</a></div><div class="ttdeci">int puntos</div><div class="ttdef"><b>Definition:</b> <a href="_torneo_8hh_source.html#l00045">Torneo.hh:45</a></div></div>
+<div class="ttc" id="aclass_torneo_html_ad7234d0b68dd3b8494b1a8b3482dfd8a"><div class="ttname"><a href="class_torneo.html#ad7234d0b68dd3b8494b1a8b3482dfd8a">Torneo::n_inscritos</a></div><div class="ttdeci">int n_inscritos</div><div class="ttdoc">Número de inscritos en el torneo.</div><div class="ttdef"><b>Definition:</b> <a href="_torneo_8hh_source.html#l00037">Torneo.hh:37</a></div></div>
+<div class="ttc" id="astruct_torneo_1_1_stats_html_a2b87092b44f0b664219570335cc35385"><div class="ttname"><a href="struct_torneo_1_1_stats.html#a2b87092b44f0b664219570335cc35385">Torneo::Stats::juegos_perdidos</a></div><div class="ttdeci">int juegos_perdidos</div><div class="ttdef"><b>Definition:</b> <a href="_torneo_8hh_source.html#l00047">Torneo.hh:47</a></div></div>
+<div class="ttc" id="a_cjt__categorias_8hh_html"><div class="ttname"><a href="_cjt__categorias_8hh.html">Cjt_categorias.hh</a></div><div class="ttdoc">Especificación de la clase Cjt_categorias.</div></div>
+<div class="ttc" id="astruct_torneo_1_1_stats_html_a9672866e67ea73da9066dd34623af3d7"><div class="ttname"><a href="struct_torneo_1_1_stats.html#a9672866e67ea73da9066dd34623af3d7">Torneo::Stats::p_perdidos</a></div><div class="ttdeci">int p_perdidos</div><div class="ttdef"><b>Definition:</b> <a href="_torneo_8hh_source.html#l00048">Torneo.hh:48</a></div></div>
+<div class="ttc" id="aclass_torneo_html_ae4640e2a7a1bcd503d636f9f0ee926e0"><div class="ttname"><a href="class_torneo.html#ae4640e2a7a1bcd503d636f9f0ee926e0">Torneo::pts_edicion_ant</a></div><div class="ttdeci">map&lt; string, int &gt; pts_edicion_ant</div><div class="ttdoc">Puntos de la edición anterior.</div><div class="ttdef"><b>Definition:</b> <a href="_torneo_8hh_source.html#l00052">Torneo.hh:52</a></div></div>
+<div class="ttc" id="aclass_cjt__categorias_html"><div class="ttname"><a href="class_cjt__categorias.html">Cjt_categorias</a></div><div class="ttdoc">Representa un conjunto de categorías.</div><div class="ttdef"><b>Definition:</b> <a href="_cjt__categorias_8hh_source.html#l00023">Cjt_categorias.hh:23</a></div></div>
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Generado por &#160;<a href="http://www.doxygen.org/index.html">
+<img class="footer" src="doxygen.png" alt="doxygen"/>
+</a> 1.8.17
+</small></address>
+</body>
+</html>
