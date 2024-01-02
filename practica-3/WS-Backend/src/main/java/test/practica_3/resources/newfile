@@ -1,0 +1,24 @@
+
+    /**
+    * POST method to delete an existing image
+    * @param id
+    * @return
+    */
+    @Path("delete")
+    @POST
+    @Consumes(MediaType.APPLICATION_FORM_URLENCODED)
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response deleteImage (@FormParam("id") String id){
+        
+    }
+    
+    /**
+    * GET method to list images
+    * @return
+    */
+    @Path("list")
+    @GET
+    @Produces(MediaType.APPLICATION_JSON)
+    public Response listImages (){
+        
+    }
