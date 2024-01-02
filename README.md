@@ -1,5 +1,5 @@
 # AD-FIB
-Aplicacions Distrïbuides @Curs 2023-2024 (Q1) - FIB (UPC) 
+Aplicacions Distribuïdes @Curs 2023-2024 (Q1) - FIB (UPC) 
 --------------------------------------------------------------------------
 Pràctiques de l'assignatura.
 
