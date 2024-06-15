@@ -27,3 +27,10 @@ All deliverable labs of the final hardware course. Basically, parallel computing
 ### 🌐 [AD](./courses/AD) - Aplicacions Distribuïdes (Distributed Applications)
 It contains all course deliverables. AD consisted in develop from scratch a simple web-app.  
 Then, performing changes to finally implement a distributed architecture with a REST API.
+
+### 🌐 [PTI](./courses/PTI) - Projecte de Tecnologies de la Informació (Information Technology Project)
+The course is focused on the development of an information technology project. 
+In the first phase, the project proposal is elaborated and laboratory assignments are carried out. In the second phase, the project is developed in group, to present results and conclusions to the class at the end of the course.
+
+The check out my project please visit my profile and find Zapper, a full-stack application powered by Kubernetes.
+
