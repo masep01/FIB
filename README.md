@@ -34,3 +34,6 @@ In the first phase, the project proposal is elaborated and laboratory assignment
 
 The check out my project please visit my profile and find [Zapper](https://github.com/masep01#zapper), a full-stack application powered by Kubernetes.
 
+### 🌐 [SOA](https://github.com/masep01/SOA-FIB) - Sistemes Operatius Avançats (Advanced Operting Systems)
+This course focuses on offering an internal vision of the basic functioning of an Operating System, evaluating the implication that the implementation of different system components has on the performance of the applications. Labs consist in developing a basic SO starting from a basic SO skeleton called ZeOS.
+See more in its own repo [SOA-FIB](https://github.com/masep01/SOA-FIB).
